@@ -3,8 +3,6 @@ EcoSteno
 
 ![EcoSteno](https://nolltronics.com/wp-content/uploads/2021/04/Noll-Steno-Front-Angle.jpg)
 
-A 
-
 * Keyboard Maintainer: [Nathan Olivares](https://github.com/nkotech)
 * Hardware Supported: EcoSteno v1.0.1X
 * Hardware Availability: [Nolltronics](https://nolltronics.com/product/ecosteno)
