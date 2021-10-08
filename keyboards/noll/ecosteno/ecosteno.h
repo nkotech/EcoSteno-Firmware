@@ -29,9 +29,3 @@
     {K20,   K21,   K22,   K23,   K24, K25,   K26,   K27,   K28,   K29,   K2A,   K2B},   \
     {KC_NO, KC_NO, KC_NO, KC_NO, K34, K35,   K36,   K37,   KC_NO, KC_NO, KC_NO, KC_NO}  \
 }
-
-// we dont want open drain, we want push pull(?)
-// pal.h, 7U is open drain, 6U is push pull
-// but it doesn't seem to affect anything here, works in keyboard.c though
-//#define GPIOA_PIN0  6U  // open drain 
-//#define GPIOA_PIN1  6U  // open drain

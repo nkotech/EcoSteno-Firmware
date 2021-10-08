@@ -5,14 +5,20 @@
 
 #ifdef BOARD_STM32_F103_STM32DUINO
 
+// next 3 lines are for the stm board .12
+// #define LED_ON()    do { palClearPad(GPIOC, 13) ;} while (0)
+// #define LED_OFF()   do { palSetPad(GPIOC, 13); } while (0)
+// #define LED_TGL()   do { palTogglePad(GPIOC, 13); } while (0)
 
-#define RED_LED_OFF()    do { palClearPad(GPIOA, 1) ;} while (0) // GPIOA1 is right green LED
-#define RED_LED_ON()   do { palSetPad(GPIOA, 1); } while (0)
-#define RED_LED_TGL()   do { palTogglePad(GPIOA, 1); } while (0)
+// uncomment for .16 boards
+// this is fairly unnecessary
+#define RED_LED_OFF()    do { palClearPad(GPIOA, 0) ;} while (0) // GPIOA1 is right green LED
+#define RED_LED_ON()   do { palSetPad(GPIOA, 0); } while (0)
+#define RED_LED_TGL()   do { palTogglePad(GPIOA, 0); } while (0)
 
-#define GREEN_LED_OFF()    do { palClearPad(GPIOA, 0) ;} while (0) // GPIOA1 is right green LED
-#define GREEN_LED_ON()   do { palSetPad(GPIOA, 0); } while (0)
-#define GREEN_LED_TGL()   do { palTogglePad(GPIOA, 0); } while (0)
+#define GREEN_LED_OFF()    do { palClearPad(GPIOA, 1) ;} while (0) // GPIOA1 is right green LED
+#define GREEN_LED_ON()   do { palSetPad(GPIOA, 1); } while (0)
+#define GREEN_LED_TGL()   do { palTogglePad(GPIOA, 1); } while (0)
 
 #else
 #define LED_ON()
@@ -21,15 +27,19 @@
 #endif
 
 void keyboard_pre_init_user(void){
+    
     // Initialize LED pins to correct setting
     palSetPadMode(GPIOA, 0, PAL_MODE_OUTPUT_PUSHPULL); // 6U correct
     palSetPadMode(GPIOA, 1, PAL_MODE_OUTPUT_PUSHPULL); // 6U correct
+
 }
 
 void matrix_init_kb(void){
+
     RED_LED_ON();
     GREEN_LED_ON();
     wait_ms(500);
     RED_LED_OFF();
-    GREEN_LED_OFF();
+    //GREEN_LED_OFF();
+
 }

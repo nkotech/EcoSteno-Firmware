@@ -4,7 +4,7 @@ EcoSteno
 ![EcoSteno](https://nolltronics.com/wp-content/uploads/2021/04/Noll-Steno-Front-Angle.jpg)
 
 * Keyboard Maintainer: [Nathan Olivares](https://github.com/nkotech)
-* Hardware Supported: EcoSteno v1.0.1X
+* Hardware Supported: EcoSteno v1.0.1X and v1.0.2X
 * Hardware Availability: [Nolltronics](https://nolltronics.com/product/ecosteno)
 
 Make example for this keyboard (after setting up your build environment):
