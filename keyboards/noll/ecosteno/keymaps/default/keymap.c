@@ -1,4 +1,4 @@
-/* Copyright 2021 Nathan Olivares
+/* Copyright 2022 Nathan Olivares
  * 
  * This program is free software: you can redistribute it and/or modify 
  * it under the terms of the GNU General Public License as published by 
@@ -467,10 +467,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void matrix_init_user(void) {
-  steno_set_mode(STENO_MODE_BOLT); // STENO_MODE_GEMINI or STENO_MODE_BOLT
-  //steno_set_mode(STENO_MODE_GEMINI);
-  // STENO_MODE_GEMINI only works if you remove references to TX Bolt in QMK
-  // follow ecosteno-geminipr.diff to do this (thanks to dnaq in the Plover discord)
+  // this shouldn't be needed in modern versions of QMK
 };
 
 layer_state_t layer_state_set_user(layer_state_t state) {

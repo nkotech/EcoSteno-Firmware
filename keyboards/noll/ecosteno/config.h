@@ -1,4 +1,4 @@
-/* Copyright 2021 Nathan Olivares 
+/* Copyright 2022 Nathan Olivares 
  * 
  * This program is free software: you can redistribute it and/or modify 
  * it under the terms of the GNU General Public License as published by 
@@ -19,18 +19,20 @@
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED // recommended by QMK
 #define PRODUCT_ID      0x3621 
-#define DEVICE_VER      0x0100
+#define DEVICE_VER      0x0112
 #define MANUFACTURER    Noll Electronics LLC
-#define PRODUCT         EcoSteno
+#define PRODUCT         Ecosteno
 
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 12
 
-//#define MATRIX_COL_PINS { B15, B14, B13, B12, B11, B10, B9, B8, B7, B6, B5, B4 } // old 0.12
-#define MATRIX_COL_PINS { B15, B14, B13, B12, B1, B0, B9, B8, B7, B6, B5, B4 } // gd
-//#define MATRIX_ROW_PINS { A15, B3, B1, B0 } // old 0.12
-#define MATRIX_ROW_PINS { A15, B3, A7, A6 } // current 0.16
+/* This is for the pink switched versions, 1.1.X */
+#define MATRIX_COL_PINS { B15, B14, B13, B12, B1, B0, B9, B6, B5, B4, B3, A15 } 
+#define MATRIX_ROW_PINS { B8, B7, A7, A6 }
+/* This is for the blue switched versions, 1.0.1X */
+// #define MATRIX_COL_PINS { B15, B14, B13, B12, B1, B0, B9, B8, B7, B6, B5, B4 } 
+// #define MATRIX_ROW_PINS { A15, B3, A7, A6 }
 #define DIODE_DIRECTION COL2ROW
 
 /* Set 0 if debouncing isn't needed */

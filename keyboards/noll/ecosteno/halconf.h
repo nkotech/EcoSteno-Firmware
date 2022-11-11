@@ -21,6 +21,6 @@
 
 #pragma once
 
-// I don't think I need anything? 
+// I don't think I need anything here 
 
 #include_next <halconf.h>

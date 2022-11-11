@@ -1,10 +1,10 @@
-EcoSteno
+Ecosteno
 ===
 
-![EcoSteno](https://nolltronics.com/wp-content/uploads/2021/04/Noll-Steno-Front-Angle.jpg)
+![Ecosteno](https://nolltronics.com/wp-content/uploads/2021/04/Noll-Steno-Front-Angle.jpg)
 
 * Keyboard Maintainer: [Nathan Olivares](https://github.com/nkotech)
-* Hardware Supported: EcoSteno v1.0.1X and v1.0.2X
+* Hardware Supported: Ecosteno v1.1.X with pink switches and V1.0.1X with blue switches
 * Hardware Availability: [Nolltronics](https://nolltronics.com/product/ecosteno)
 
 Make example for this keyboard (after setting up your build environment):
@@ -19,4 +19,4 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 [Here's a quick video demonstrating how to flash firmware onto the ecosteno](https://youtu.be/dqeZ40PPEW4)
 
-The steno protocol currently included in this project is TX Bolt. I'm not entirely sure why getting Gemini PR to work isn't as simple as changing steno_set_mode(STENO_MODE_GEMINI) in keymap.c, but for now, if you want to compile ecosteno firmware that works with Gemini PR, you'll need to remove some references to TX Bolt by following ecosteno-geminipr.diff in EcoSteno-Firmware/keyboards/noll/ (thanks to dnaq in the Plover discord).
+V1.1.X and V1.0.1X have different pinouts, but the only file this affects is config.h . It's set up to work with the newer 1.1.X boards, but all you have to do to build firmware for 1.0.1X boards is comment out the MATRIX_COL_PINS and MATRIX_ROW_PINS for the 1.1.X and uncomment the lines for the 1.0.1X.
