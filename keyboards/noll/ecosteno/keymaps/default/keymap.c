@@ -454,14 +454,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWERTY_CAPS] = LAYOUT(
                 S(KC_TAB),        S(KC_ESC),                                     S(KC_ENTER),           S(KC_BSPC),
     TO(STENO),  S(KC_Q), S(KC_W), S(KC_E), S(KC_R), S(KC_T),   S(KC_Y), S(KC_U), S(KC_I),    S(KC_O),   S(KC_P),     S(KC_QUOT),
-    MO(SYMBOL), S(KC_Z), S(KC_X), S(KC_C), S(KC_V), S(KC_B),   S(KC_N), S(KC_M), S(KC_COMM), S(KC_DOT), S(KC_SLASH), KC_RSHIFT,
+    MO(SYMBOL), S(KC_Z), S(KC_X), S(KC_C), S(KC_V), S(KC_B),   S(KC_N), S(KC_M), S(KC_COMM), S(KC_DOT), S(KC_SLASH), KC_RSFT,
                                           KC_LCTL, KC_SPACE,   KC_SPACE, KC_RALT 
   ),
 
   [SYMBOL] = LAYOUT(
              KC_HASH,          KC_DOLLAR,                                       KC_LPRN,            KC_RPRN,
-    _______, KC_EXLM, KC_AT,   KC_LT,   KC_GT,   KC_BSLASH,  KC_DQT,   KC_PLUS, KC_MINS,  KC_SLASH, KC_ASTR, KC_TAB, 
-    _______, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_GRAVE,   KC_MINS,  KC_AMPR, KC_EQUAL, KC_COMM,  KC_DOT,  KC_RSHIFT,
+    _______, KC_EXLM, KC_AT,   KC_LT,   KC_GT,   KC_BSLS,  KC_DQT,   KC_PLUS, KC_MINS,  KC_SLASH, KC_ASTR, KC_TAB,
+    _______, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_GRAVE,   KC_MINS,  KC_AMPR, KC_EQUAL, KC_COMM,  KC_DOT,  KC_RSFT,
                                         KC_SCLN, KC_SPACE,   KC_SPACE, KC_SLASH 
   )
 };
