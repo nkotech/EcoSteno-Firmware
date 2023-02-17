@@ -16,13 +16,6 @@
 
 #pragma once
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED // recommended by QMK
-#define PRODUCT_ID      0x3621 
-#define DEVICE_VER      0x0112
-#define MANUFACTURER    Noll Electronics LLC
-#define PRODUCT         Ecosteno
-
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 12
